@@ -20,6 +20,8 @@
   },
   "userConfig": {
     "prompt_dirs": {
+      "type": "string",
+      "title": "Prompt directories",
       "description": "Comma-separated paths to prompt directories (e.g. /home/me/my-prompts). Each project's prompts/ folder is also scanned automatically.",
       "sensitive": false
     }

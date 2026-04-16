@@ -183,7 +183,7 @@ func extractMetadata(path string) (title, description string) {
 		name = strings.TrimSuffix(name, ".md")
 		return titleCase(name), ""
 	}
-	defer f.Close()
+	defer func() { _ = f.Close() }()
 
 	scanner := bufio.NewScanner(f)
 	first := true

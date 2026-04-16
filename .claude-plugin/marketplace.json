@@ -1,0 +1,24 @@
+{
+  "name": "prompt-library",
+  "owner": {
+    "name": "Jordan Munch O'Hare"
+  },
+  "metadata": {
+    "description": "Serve markdown prompt files as @ mention resources in Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "prompt-library",
+      "source": "./",
+      "description": "Serve markdown prompt files as @ mention resources in Claude Code",
+      "version": "0.2.0",
+      "author": {
+        "name": "Jordan Munch O'Hare"
+      },
+      "repository": "https://github.com/ohare93/prompt-library",
+      "license": "MIT",
+      "keywords": ["prompts", "resources", "mcp"]
+    }
+  ]
+}
