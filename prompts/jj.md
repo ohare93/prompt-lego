@@ -14,7 +14,8 @@ Always use jj instead of git. Never run raw git commands.
 | New commit | `jj new` or `jj new main -m "feat: ..."` |
 | Edit old commit | `jj edit <change-id>` |
 | Squash into parent | `jj squash` |
-| Split commit | `jj split` |
+| Squash specific files | `jj squash <path>...` |
+| Commit specific files | `jj commit <path>... -m "msg"` |
 | Undo | `jj undo` |
 | Push | `jj git push` |
 | Fetch | `jj git fetch` |
