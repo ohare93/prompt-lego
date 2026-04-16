@@ -1,0 +1,27 @@
+{
+  "name": "prompt-library",
+  "version": "0.1.0",
+  "description": "Serve markdown prompt files as @ mention resources in Claude Code",
+  "author": {
+    "name": "jmo"
+  },
+  "repository": "https://github.com/ohare93/prompt-library",
+  "license": "MIT",
+  "mcpServers": {
+    "prompts": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/server/run.sh",
+      "args": [],
+      "env": {
+        "PROMPT_DIRS": "${user_config.prompt_dirs}",
+        "PLUGIN_ROOT": "${CLAUDE_PLUGIN_ROOT}",
+        "PLUGIN_DATA": "${CLAUDE_PLUGIN_DATA}"
+      }
+    }
+  },
+  "userConfig": {
+    "prompt_dirs": {
+      "description": "Comma-separated paths to prompt directories (e.g. /home/me/my-prompts). Each project's prompts/ folder is also scanned automatically.",
+      "sensitive": false
+    }
+  }
+}
